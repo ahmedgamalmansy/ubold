@@ -52,10 +52,12 @@ $(document).ready(function()
                 background:'#5d9cec',
                 opacity: '1'
             });
+            $('.scroll_up').fadeIn(500);
         } else {
             $('nav').css({
                 background: 'rgba(16, 22, 54, 0.2)'
             });
+            $('.scroll_up').fadeOut(500);
         }
     });
     
@@ -99,18 +101,40 @@ $(document).ready(function()
     });
     
     
+    /*====================================*/
+        //counter active
+    /*====================================*/
     
-    
-    $('.count').each(function () {
-    $(this).prop('Counter',0).animate({
-        Counter: $(this).text()
-    }, {
-        duration: 5000,
-        easing: 'swing',
-        step: function (now) {
-            $(this).text(Math.ceil(now));
-        }
+    jQuery(document).ready(function($) {
+        $('.counter').counterUp({
+            delay: 10,
+            time: 1000
         });
+    });
+    /*=====================================================*/
+        //change classes for active and inactive links
+    /*=====================================================*/
+    
+    $('.filters li').click(function(){
+        var ulist = $('.filters');
+        ulist.find('li').removeClass('active');
+        $(this).addClass('active');
+    });
+    /*=====================================================*/
+        //set the filter layout into sameSize
+    /*=====================================================*/
+    var filterizd = $('.filtr-container').filterizr();
+    // If you have already instantiated your Filterizr then call...
+    filterizd.filterizr('setOptions', {layout: 'sameSize'});
+    
+    /*=====================================================*/
+        //scroll top event
+    /*=====================================================*/
+    
+    $('.scroll_up').click(function(){
+        $('html, body').animate({
+            scrollTop: '0px',
+        }, 1000);
     });
     
 });

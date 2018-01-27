@@ -111,7 +111,7 @@ nav{
     font-family: cursive;
 }
 .carousel-caption p::before , .carousel-caption p::after{
-    color: #5d9cec;
+    color: $mainColor;
     content: '___';
     top: -8px;
     position: relative;

@@ -4,33 +4,16 @@
     min-height: 300px;
     background: #f4f7f9;
 }
-.features .title h2{
-    margin-bottom: 30px;
-    font-weight: 900;
-    font-family: 'open sans';
-    font-size: 28px;
-    color: #5d9cec;
-}
-.features .title div{
-    color: #ccc;
-    font-size: 16px;
-}
-.features .title div::before,.features .title div::after{
-    content: '________________';
-    position: relative;
-    top: -10px;
-    margin-left: 5px;
-    margin-right: 5px;
-}
+
 .features .features-content{
     margin-top: 50px;
 }
 .features .content i{
     width: 50px;
     padding: 10px 13px;
-    border: 1px solid #5d9cec;
+    border: 1px solid $mainColor;
     border-radius: 50%;
-    color: #5d9cec;
+    color: $mainColor;
 }
 .features .content .data{
     text-align: left;

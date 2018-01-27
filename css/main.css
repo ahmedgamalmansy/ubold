@@ -1,3 +1,5 @@
+/*=============================*/
+/*=============================*/
 body {
   font-family: 'open sans' , sans-serif;
   overflow: hidden;
@@ -5,6 +7,60 @@ body {
 
 *:focus {
   outline: none;
+}
+
+.title h2 {
+  margin-bottom: 30px;
+  font-weight: 900;
+  font-family: 'open sans';
+  font-size: 28px;
+  color: #5d9cec;
+}
+
+.title div {
+  color: #ccc;
+  font-size: 16px;
+  margin-bottom: 30px;
+}
+
+.title div::before, .title div::after {
+  content: '________________';
+  position: relative;
+  top: -10px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.head p {
+  color: #5b646e;
+  font-size: 18px;
+  font-weight: 600;
+  font-family: monospace;
+  margin-bottom: 50px;
+}
+
+/*=============================*/
+/*=============================*/
+#map {
+  height: 200px;
+}
+
+/*=============================*/
+/*=============================*/
+.scroll_up {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid #a3ccff;
+  display: none;
+}
+
+.scroll_up i {
+  margin-top: -10px;
+  color: #a3ccff;
 }
 
 /*=================
@@ -240,27 +296,6 @@ media query
   background: #f4f7f9;
 }
 
-.features .title h2 {
-  margin-bottom: 30px;
-  font-weight: 900;
-  font-family: 'open sans';
-  font-size: 28px;
-  color: #5d9cec;
-}
-
-.features .title div {
-  color: #ccc;
-  font-size: 16px;
-}
-
-.features .title div::before, .features .title div::after {
-  content: '________________';
-  position: relative;
-  top: -10px;
-  margin-left: 5px;
-  margin-right: 5px;
-}
-
 .features .features-content {
   margin-top: 50px;
 }
@@ -350,39 +385,6 @@ media query
   min-height: 300px;
 }
 
-.works .title h2 {
-  margin-bottom: 30px;
-  font-weight: 900;
-  font-family: 'open sans';
-  font-size: 28px;
-  color: #5d9cec;
-}
-
-.works .title div {
-  color: #ccc;
-  font-size: 16px;
-  margin-bottom: 30px;
-}
-
-.works .title div::before, .works .title div::after {
-  content: '________________';
-  position: relative;
-  top: -10px;
-  margin-left: 5px;
-  margin-right: 5px;
-}
-
-/*===========
-style content
-============*/
-.works .work-content p {
-  color: #5b646e;
-  font-size: 18px;
-  font-weight: 600;
-  font-family: monospace;
-  margin-bottom: 50px;
-}
-
 /*===========
 style wrapper
 ============*/
@@ -400,13 +402,14 @@ style wrapper
 
 .works .links ul li {
   display: inline-block;
-  padding: 5px 15px;
   margin: 5px;
   border-radius: 5px;
   -webkit-transition: all 0.5s linear;
   -moz-transition: all 0.5s linear;
   -o-transition: all 0.5s linear;
   transition: all 0.5s linear;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .works .links ul li.active {
@@ -421,6 +424,7 @@ style wrapper
   color: #000;
   text-decoration: none;
   font-weight: bold;
+  padding: 5px 10px;
 }
 
 .works .links ul li.active a {
@@ -492,6 +496,10 @@ style wrapper
   transform: rotateY(0deg);
 }
 
+.filtr-item {
+  transform-style: flat !important;
+}
+
 /*=============
 media query
 ==============*/
@@ -511,37 +519,8 @@ media query
   min-height: 300px;
 }
 
-.team .title h2 {
-  margin-bottom: 30px;
-  font-weight: 900;
-  font-family: 'open sans';
-  font-size: 28px;
-  color: #5d9cec;
-}
-
-.team .title div {
-  color: #ccc;
-  font-size: 16px;
-  margin-bottom: 30px;
-}
-
-.team .title div::before, .team .title div::after {
-  content: '________________';
-  position: relative;
-  top: -10px;
-  margin-left: 5px;
-  margin-right: 5px;
-}
-
-/*===========
-style head paragraph
-============*/
-.team .head p {
-  color: #5b646e;
-  font-size: 18px;
-  font-weight: 600;
-  font-family: monospace;
-  margin-bottom: 50px;
+.title {
+  margin-top: 30px;
 }
 
 /*===========
@@ -679,7 +658,7 @@ media query
   background: url(../images/city.jpg) no-repeat fixed center;
   background-color: rgba(6, 32, 51, 0.8);
   background-size: cover;
-  background-position: 50% 399px;
+  background-position: 100% -50px;
 }
 
 .facts .opacity_layer {
@@ -688,31 +667,8 @@ media query
   background: rgba(6, 32, 51, 0.8);
 }
 
-.facts .title h2 {
-  margin-bottom: 30px;
-  font-weight: 900;
-  font-family: 'open sans';
-  font-size: 28px;
-  color: #5d9cec;
-}
-
 .facts .title {
   margin-bottom: 50px;
-}
-
-.facts .title div {
-  color: #fff;
-  font-size: 16px;
-  margin-bottom: 30px;
-}
-
-.facts .title div::before, .facts .title div::after {
-  content: '_________________';
-  position: relative;
-  top: -7px;
-  margin-left: 10px;
-  margin-right: 10px;
-  color: #aaa;
 }
 
 .facts .block i {
@@ -745,41 +701,7 @@ media query
   padding-top: 50px;
 }
 
-.contacts .title h2 {
-  margin-bottom: 30px;
-  font-weight: 900;
-  font-family: 'open sans';
-  font-size: 28px;
-  color: #5d9cec;
-}
-
 .contacts .title {
-  margin-bottom: 50px;
-}
-
-.contacts .title div {
-  color: #aaa;
-  font-size: 16px;
-  margin-bottom: 30px;
-}
-
-.contacts .title div::before, .contacts .title div::after {
-  content: '_________________';
-  position: relative;
-  top: -7px;
-  margin-left: 10px;
-  margin-right: 10px;
-  color: #aaa;
-}
-
-/*===========
-style head paragraph
-============*/
-.contacts .head p {
-  color: #5b646e;
-  font-size: 18px;
-  font-weight: 600;
-  font-family: monospace;
   margin-bottom: 50px;
 }
 
@@ -817,6 +739,10 @@ style content
   padding: 10px;
   font-size: 16px;
   margin-bottom: 10px;
+}
+
+.contacts .content .form input:focus {
+  border-color: #5d9cec;
 }
 
 .contacts .content .form textarea {
@@ -858,10 +784,6 @@ media query
     font-size: 14px;
   }
 }
-#map {
-  height: 200px;
-}
-
 footer .subscribe h4, footer .explore h4, footer .support h4 {
   color: #fff;
   font-weight: bold;

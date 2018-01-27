@@ -2,36 +2,6 @@
     padding-top: 30px;
     min-height: 300px;
 }
-.works .title h2{
-    margin-bottom: 30px;
-    font-weight: 900;
-    font-family: 'open sans';
-    font-size: 28px;
-    color: #5d9cec;
-}
-.works .title div{
-    color: #ccc;
-    font-size: 16px;
-    margin-bottom: 30px;
-}
-.works .title div::before,.works .title div::after{
-    content: '________________';
-    position: relative;
-    top: -10px;
-    margin-left: 5px;
-    margin-right: 5px;
-}
-
-/*===========
-style content
-============*/
-.works .work-content p{
-    color: #5b646e;
-    font-size: 18px;
-    font-weight: 600;
-    font-family: monospace;
-    margin-bottom: 50px;
-}
 /*===========
 style wrapper
 ============*/
@@ -46,22 +16,24 @@ style wrapper
 }
 .works .links ul li{
     display: inline-block;
-    padding: 5px 15px;
     margin: 5px;
     border-radius: 5px;
     @include transition(all,.5s,linear);
+    padding-top: 5px;
+    padding-bottom: 5px;
 }
 .works .links ul li.active{
-    background: #5d9cec;
+    background: $mainColor;
 }
 .works .links ul li:hover{
-    background: #5d9cec;
+    background: $mainColor;
 }
 
 .works .links ul li a{
     color: #000;
     text-decoration: none;
     font-weight: bold;
+    padding: 5px 10px;
 }
 .works .links ul li.active a{
     color: #fff;
@@ -112,8 +84,9 @@ style wrapper
     opacity: 1;
     @include transform(rotateY(0deg));
 }
-
-
+.filtr-item{
+    transform-style: flat !important;
+}
 /*=============
 media query
 ==============*/

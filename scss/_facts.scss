@@ -3,35 +3,15 @@
     background: url(../images/city.jpg) no-repeat fixed center ;
     background-color: rgba(6,32,51,.8);
     background-size: cover;
-    background-position: 50% 399px;
+    background-position: 100% -50px;
 }
 .facts .opacity_layer{
     padding-top: 50px;
     padding-bottom: 70px;
     background: rgba(6,32,51,.8);
 }
-.facts .title h2{
-    margin-bottom: 30px;
-    font-weight: 900;
-    font-family: 'open sans';
-    font-size: 28px;
-    color: #5d9cec;
-}
 .facts .title{
     margin-bottom: 50px;
-}
-.facts .title div{
-    color: #fff;
-    font-size: 16px;
-    margin-bottom: 30px;
-}
-.facts .title div::before,.facts .title div::after{
-    content: '_________________';
-    position: relative;
-    top: -7px;
-    margin-left: 10px;
-    margin-right: 10px;
-    color: #aaa;
 }
 
 .facts .block i{

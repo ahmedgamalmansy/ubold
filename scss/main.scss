@@ -1,12 +1,6 @@
-$mainColor: rgb(93, 156, 236);
-body{
-    font-family: 'open sans' , sans-serif;
-    overflow: hidden;
-}
-*:focus{
-    outline: none;
-    
-}
+$mainColor: #5d9cec;
+
+@import 'global';
 @import 'loader';
 @import 'methods';
 @import 'header';
@@ -17,9 +11,5 @@ body{
 @import 'facts';
 @import 'contacts';
 
-#map 
-{
-    height: 200px;
-}
 
 @import 'footer';

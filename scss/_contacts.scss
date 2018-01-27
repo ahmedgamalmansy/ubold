@@ -3,39 +3,10 @@
     padding-bottom: 50px;
     padding-top: 50px;
 }
-.contacts .title h2{
-    margin-bottom: 30px;
-    font-weight: 900;
-    font-family: 'open sans';
-    font-size: 28px;
-    color: #5d9cec;
-}
 .contacts .title{
     margin-bottom: 50px;
 }
-.contacts .title div{
-    color: #aaa;
-    font-size: 16px;
-    margin-bottom: 30px;
-}
-.contacts .title div::before,.contacts .title div::after{
-    content: '_________________';
-    position: relative;
-    top: -7px;
-    margin-left: 10px;
-    margin-right: 10px;
-    color: #aaa;
-}
-/*===========
-style head paragraph
-============*/
-.contacts .head p{
-    color: #5b646e;
-    font-size: 18px;
-    font-weight: 600;
-    font-family: monospace;
-    margin-bottom: 50px;
-}
+
 
 /*===========
 style content
@@ -68,6 +39,9 @@ style content
     padding: 10px;
     font-size: 16px;
     margin-bottom: 10px;
+}
+.contacts .content .form input:focus{
+    border-color: $mainColor;
 }
 .contacts .content .form textarea{
     width: 97%;
