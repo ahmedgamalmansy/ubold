@@ -137,4 +137,20 @@ $(document).ready(function()
         }, 1000);
     });
     
+    
+    $("[data-fancybox]").fancybox({
+        loop : true,
+        buttons : [
+            'slideShow',
+            'fullScreen',
+            'thumbs',
+            //'share',
+            'download',
+            'zoom',
+            'close'
+        ],
+        transitionEffect : "slide",
+        transitionDuration : 1000,
+        animationEffect : "zoom-in-out"
+    });
 });
